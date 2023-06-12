@@ -48,6 +48,8 @@ Generating a sim trace [simple.out](https://github.com/SorayaM123/Chipyard-Veril
 
 ## Waveforms
 To extract [waveforms](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.vcd) file (simple.vcd) from the simulation, you can use the below command:
+
+
     $ make run-binary-debug BINARY=<path-to-binary>/simple.riscv
 
 This command will generate a vcd file, then you can use open-source vcd-capable waveform viewer [GTKWave](https://gtkwave.sourceforge.net/)
