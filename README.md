@@ -14,9 +14,9 @@ and generate an object file,  we need the below command:
 
 
 
-echo "riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o"
+$ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
 
-
+<br />
 
 After the source code is compiled into an object file, this command creates an executable binary ( simple.riscv)
 
