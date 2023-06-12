@@ -14,7 +14,7 @@ and generate an object file,  we need the below command:
 
 
 
-$riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
+echo $riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
 
 
 
