@@ -5,7 +5,7 @@ This repository contain the Chipyard usage to simulate the C code by using the V
 
 
 
-# riscv-tools
+### riscv-tools
 In the following, you can find the command on how to use the riscv -tools using in Chipyard.
 # Riscv Compiler
 To use Chipyard simulators, first, need to compile your code, by using the RISC-V compiler.
