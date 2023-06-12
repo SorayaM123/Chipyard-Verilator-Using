@@ -47,7 +47,7 @@ This assembly code is more simple than the generated assembly by the above comma
 Generating a sim trace [simple.out](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.out) from the /sims/verilator directory:
 
 
-    $ make hex-run-binary BINARY=<path-to-binary>/simple.riscv
+    $ make run-binary-hex BINARY=<path-to-binary>/simple.riscv
 
 
 ## Waveforms
