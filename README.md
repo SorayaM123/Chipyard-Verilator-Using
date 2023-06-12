@@ -11,22 +11,18 @@ In the following, you can find the command on how to use the riscv -tools using 
 To use Chipyard simulators, first, need to compile your code, by using the RISC-V compiler.
 For example, to compile our C file code ["simple.c"] (https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.c)
 and generate an object file,  we need the below command:
-
-   $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
    
 
-
-<<<<<<< HEAD
     $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
 
 After the source code is compiled into an object file, this command creates an executable binary ( simple.riscv)
 
     $ riscv64-unknown-elf-gcc -static -specs=htif_nano.specs simple.o -o simple.riscv
-=======
+
 After the source code is compiled into an object file, this command creates an executable binary ( simple.riscv)
 
   $ riscv64-unknown-elf-gcc -static -specs=htif_nano.specs simple.o -o simple.riscv
->>>>>>> origin/main
+
 
 ### Riscv Assembler
 
