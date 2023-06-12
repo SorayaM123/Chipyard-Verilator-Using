@@ -27,8 +27,7 @@ After the source code is compiled into an object file, this command creates an e
 There is also an opportunity to have an [assembly](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.asm) code of our C code to understand what we want to verify and what we expect after running the code in the RISC-V processor.
 Generate assembly with comments:
 
-
-    $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -S simple.c -o simple.asm
+      $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -S simple.c -o simple.asm
 
 Generate [assembly](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple-dis.asm) from the compiled executable:
 
