@@ -43,11 +43,13 @@ This assembly code is more simple than the generated assembly by the above comma
 ## Print Output
 
 Generating a sim trace [simple.out](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.out) from the /sims/verilator directory:
+
     $ make run-binary-hex BINARY=<path-to-binary>/simple.riscv
 
 
 ## Waveforms
 To extract [waveforms](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.vcd) file (simple.vcd) from the simulation, you can use the below command:
-make run-binary-debug BINARY=<path-to-binary>/simple.riscv
+
+   $ make run-binary-debug BINARY=<path-to-binary>/simple.riscv
 
 This command will generate a vcd file, then you can use open-source vcd-capable waveform viewer [GTKWave](https://gtkwave.sourceforge.net/)
