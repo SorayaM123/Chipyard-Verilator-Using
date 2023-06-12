@@ -25,9 +25,9 @@ After the source code is compiled into an object file, below command creates an 
 ### Riscv Assembler
 
 
-There is also an opportunity to have an [assembly](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.asm) code of our C code to understand what you want to verify and what you expect after running the code in the RISC-V processor.
+There is also an opportunity to have an assembly code of our C code to understand what you want to verify and what you expect after running the code in the RISC-V processor.
 
-Generate assembly with comments:
+Generate [assembly](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.asm) with comments:
 
 
     $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -S simple.c -o simple.asm
