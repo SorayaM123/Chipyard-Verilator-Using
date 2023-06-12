@@ -16,17 +16,17 @@ and generate an object file,  we need the below command:
    
 
 
-<<<<<<< HEAD
+
     $ riscv64-unknown-elf-gcc  -O3 -fno-common -fno-builtin-printf -specs=htif_nano.specs -c simple.c -o simple.o
 
 After the source code is compiled into an object file, this command creates an executable binary ( simple.riscv)
 
     $ riscv64-unknown-elf-gcc -static -specs=htif_nano.specs simple.o -o simple.riscv
-=======
+
 After the source code is compiled into an object file, this command creates an executable binary ( simple.riscv)
 
   $ riscv64-unknown-elf-gcc -static -specs=htif_nano.specs simple.o -o simple.riscv
->>>>>>> origin/main
+
 
 ### Riscv Assembler
 
