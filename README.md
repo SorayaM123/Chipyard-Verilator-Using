@@ -12,7 +12,7 @@ Change your current working directory to the Chipyard:
 
     $ cd chipyard/
 
-Then We need a package manager to install Chipyard. Here we need to use Mambaforge, a distribution of the conda package manager and a fast, robust, and cross-platform package manager. 
+Then We need a **package manager** to install Chipyard. Here we need to use **Mambaforge**, a distribution of the conda package manager and a fast, robust, and cross-platform package manager. 
 
     $ wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
 
@@ -22,7 +22,7 @@ Then We need a package manager to install Chipyard. Here we need to use Mambafor
 
 ### Conda
 
- Conda allows users to create an “environment” that holds system dependencies like make, gcc, etc.
+ Conda allows users to create an **“environment”** that holds system dependencies like make, gcc, etc.
 
     $ conda
     $ bash
