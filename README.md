@@ -8,7 +8,7 @@ This repository contains the Chipyard usage to simulate the C code by using the 
 First, Create a direction for your Chipyard like the below command:
 
     $ mkdir chipyard
-Change your current working directory to the Chipyar:
+Change your current working directory to the Chipyard:
 
     $ cd chipyard/
 
@@ -45,7 +45,7 @@ In the following, you need to initialize all submodules, install a toolchain, an
 
 This script wraps around the conda environment initialization process.
 
-### load environment
+#### load environment
 
 Once setup is complete, an emitted **env.sh** file should exist in the top-level repository. This env.sh file should always be sourced before running any **make** commands.
 
@@ -55,9 +55,9 @@ Once setup is complete, an emitted **env.sh** file should exist in the top-level
 
 ## riscv-tools
 
-In the following, you can find the command on how to use the riscv -tools using in Chipyard.
+In the following, you can find the command on how to use the **riscv -tools** using in Chipyard.
 ### Riscv Compiler
-To use Chipyard simulators, first, need to compile your code, by using the RISC-V compiler.
+To use Chipyard simulators, first, need to compile your code, by using the **RISC-V compiler**.
 For example, to compile our C file code [simple.c](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.c)
 and generate an object file [simple.o](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.o), need the below command:
   
@@ -74,7 +74,7 @@ After the source code is compiled into an object file, in the following command,
 ### Riscv Assembler
 
 
-There is also an opportunity to have an assembly code of our C code to understand what you want to verify and what you expect after running the code in the RISC-V processor.
+There is also an opportunity to have an **assembly** code of our C code to understand what you want to verify and what you expect after running the code in the RISC-V processor.
 
 Generate [assembly](https://github.com/SorayaM123/Chipyard-Verilator-Using/blob/main/simple.asm) with comments:
 
@@ -105,4 +105,4 @@ To extract [waveforms](https://github.com/SorayaM123/Chipyard-Verilator-Using/bl
 
     $ make run-binary-debug BINARY=<path-to-binary>/simple.riscv
 
-This command will generate a vcd file, then you can use open-source vcd-capable waveform viewer [GTKWave](https://gtkwave.sourceforge.net/)
+This command will generate a **vcd file**, then you can use open-source vcd-capable waveform viewer [GTKWave](https://gtkwave.sourceforge.net/)
