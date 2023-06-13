@@ -1,23 +1,25 @@
 # Chipyard-Verilator-Using
-This repository contain the Chipyard usage to simulate the C code by using the Verilator simulator.
+
+This repository contains the Chipyard usage to simulate the C code by using the **Verilator simulator**.
 
 
-## Chipyard instalation
+## Chipyard installation
 
-Creat a direction for your Chipyard like below:
+First, Create a direction for your Chipyard like the below command:
 
     $ mkdir chipyard
 Change your current working directory to the Chipyar:
 
     $ cd chipyard/
 
-Then We need a pakage manager to install Chipyard. Here we need to use Mambaforge, that is a distribution of the conda package manager and is a fast, robust, and cross-platform package manager. 
+Then We need a package manager to install Chipyard. Here we need to use Mambaforge, a distribution of the conda package manager and a fast, robust, and cross-platform package manager. 
 
     $ wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
 
     $ bash Mambaforge-Linux-x86_64.sh
 
     $ cat <path-to-.bachrc>/.bashrc
+
 ### Conda
 
  Conda allows users to create an “environment” that holds system dependencies like make, gcc, etc.
@@ -26,8 +28,10 @@ Then We need a pakage manager to install Chipyard. Here we need to use Mambaforg
     $ bash
     $ conda install -n base conda-lock
     $ conda activate base
+
 ### Chipyard Git Clone
-Now, you just need to Clone the Git repository from the Chipyard repository.
+
+Now, you need to Clone the Git repository from the Chipyard repository.
 
     $ git clone https://github.com/ucb-bar/chipyard.git
     $ cd chipyard/
@@ -35,7 +39,7 @@ Now, you just need to Clone the Git repository from the Chipyard repository.
 
 ### Setup Riscv tools
 
-In the following, need to initializes all submodules, installs a toolchain, and runs other setups. 
+In the following, you need to initialize all submodules, install a toolchain, and run other setups. 
 
     $ ./build-setup.sh riscv-tools
 
@@ -46,7 +50,6 @@ This script wraps around the conda environment initialization process.
 Once setup is complete, an emitted **env.sh** file should exist in the top-level repository. This env.sh file should always be sourced before running any **make** commands.
 
     $ source env.sh
-
 
 
 
